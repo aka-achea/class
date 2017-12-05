@@ -1,6 +1,8 @@
 #!/usr/bin/python
 #coding:utf-8
 
+# test
+
 class AttrDisplay:
     """
     Provides an inheritable print overload method that displays instances with
