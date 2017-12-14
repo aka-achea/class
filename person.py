@@ -58,24 +58,9 @@ class Provider(Super):
     def action(self):
         print('in Provider.action')
 
-X = 11
-
-def f():
-    print(X)
-
-def g():
-    X = 22
-    print(X)
-
-class C:
-    X = 33
-    def m(self):
-        X = 44
-        self.X = 55
-
 
 if __name__=='__main__':
-    """
+
     bob = Person('Bob Smith')
     sue = Person('Sue Jones',job='dev',pay=100000)
     print(bob.name,bob.pay)
@@ -89,7 +74,7 @@ if __name__=='__main__':
     for obj in (bob,sue,tom):
         obj.giveraise(.10)
         print(obj)
-    print('--------------------------')
+    print('-------Department------------')
     development = Department(bob,sue)
     development.addmember(tom)
     development.giveraise(.10)
@@ -99,14 +84,3 @@ if __name__=='__main__':
     for klass in (Inheritor,Replacer,Extender):
         print('\n'+klass.__name__ + '...')
         klass().method()
-    """
-
-    print(X)
-    f()
-    g()
-    print(X)
-    obj = C()
-    print(obj.X)
-    obj.m()
-    print(obj.X)
-    print(C.X)
