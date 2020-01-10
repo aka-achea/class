@@ -4,7 +4,7 @@ class DescState():
     """docstring for DescState."""
     def __init__(self, value):
          self.value = value
-    def __get__(self, instance,onwer):
+    def __get__(self, instance,aa):
         print('DescState get')
         return self.value * 10
     def __set__(self,instance,value):
